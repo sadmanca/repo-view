@@ -40,7 +40,7 @@ function addBtnClone() {
 
 import { Octokit } from "https://esm.sh/@octokit/core";
 import mime from "https://cdn.skypack.dev/mime/lite";
-mime._types.py = 'application/python'
+mime._types.py = 'application/x-python-code'
 
 marked.setOptions({
   highlight: (code, lang) => {
