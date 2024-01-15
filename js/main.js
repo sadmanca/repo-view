@@ -39,7 +39,7 @@ function addBtnClone() {
 }
 
 import { Octokit } from "https://esm.sh/@octokit/core";
-import mime from "https://cdn.skypack.dev/mime/lite";
+import mime from "https://esm.sh/mime@4.0.1/lite";
 // mime._types.py = 'application/python'
 
 marked.setOptions({
