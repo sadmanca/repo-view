@@ -26,22 +26,17 @@
       (async () => {
         var useDarkThemeCookie = await localStorage.getItem("useDarkTheme");
         if (useDarkThemeCookie) {
-          window.useDarkTheme = useDarkThemeCookie
-            ? JSON.parse(useDarkThemeCookie)
-            : useDarkThemeCookie;
+            window.useDarkTheme = JSON.parse(useDarkThemeCookie);
         } else {
-          if (window.matchMedia) {
-            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-              useDarkTheme = true;
-            } else {
-              useDarkTheme = false;
+            window.useDarkTheme = true; // Default to dark theme
+            if (window.matchMedia) {
+                if (!window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                    window.useDarkTheme = false; // If not in dark mode by default
+                }
             }
-          } else {
-            useDarkTheme = true; // default is dark 🤓
-          }
         }
         useDarkTheme ? darkreader.enable() : darkreader.disable();
-      })();
+    })();
     </script>
   </head>
   <body>
