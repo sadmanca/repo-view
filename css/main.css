@@ -81,7 +81,6 @@ body:has(ul.tree[hidden]) .blob-view .content {
 }
 
 div.footer {
-    position: fixed;
     bottom: 2px;
 }
 

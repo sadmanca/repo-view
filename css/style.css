@@ -231,16 +231,36 @@ article.readme,
   margin-block-start: -0.2em;
   margin-block-end: -0.2em;
 }
+.markdown h3 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--markdown-line-color);
+  margin-block-start: -0.2em;
+  margin-block-end: -0.2em;
+}
 .markdown p {
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 16px;
-  margin-block-start: -0.5em;
+  margin-block-start: -0.4em;
+  margin-block-end: -0.4em;
 }
 .markdown ul {
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 0;
+  margin-block-start: -1.2em;
+  margin-block-end: -1.2em;
+}
+.markdown ol {
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-block-start: -1.2em;
+  margin-block-end: -1.2em;
 }
 .markdown img {
   vertical-align: middle;
@@ -291,8 +311,8 @@ article.readme,
   display: none;
 }
 .markdown li {
-  margin-block-start: -1.2em;
-  margin-block-end: -1.2em;
+  margin-block-start: -0.55em;
+  margin-block-end: -0.55em;
 }
 
 /* Spinner elipses */
