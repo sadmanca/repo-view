@@ -28,7 +28,7 @@ img.dir {
 
 .blob-view .content {
     overflow: auto;
-    overflow-x: auto;
+    overflow-x: clip;
 }
 
 .blob-view .content pre {
@@ -58,7 +58,7 @@ img.dir {
 }
 
 ul.tree {
-    max-height: 40vh;
+    /* max-height: 40vh; */
     overflow: auto;
     min-width: 200px;
     max-width: 1000px;
@@ -77,7 +77,7 @@ body:has(#preview-div[hidden]) ul.tree {
 }
 
 body:has(ul.tree[hidden]) .blob-view .content {
-    height: 70vh !important;
+    /* height: 70vh !important; */
 }
 
 div.footer {

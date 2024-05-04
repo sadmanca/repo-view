@@ -211,6 +211,7 @@ article.readme,
   padding: 2em;
 }
 .markdown h1 {
+  font-weight: 600;
   font-size: 2em;
   line-height: 1.25;
   margin: .67em 0;
@@ -222,6 +223,7 @@ article.readme,
   margin-block-end: -0.2em;
 }
 .markdown h2 {
+  font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.25;
   margin-top: 24px;
@@ -232,6 +234,7 @@ article.readme,
   margin-block-end: -0.2em;
 }
 .markdown h3 {
+  font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.25;
   margin-top: 24px;

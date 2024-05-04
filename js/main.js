@@ -320,7 +320,7 @@ async function gotoPath(path, boolUpdateHistory = true, disableAels = true) {
   if (path) {
     pathSplit.slice(0, -1).forEach((i) => {
       var slash = document.createElement("span");
-      slash.innerHTML = " / ";
+      slash.innerHTML = "/";
       locationDiv.appendChild(slash);
       var a = document.createElement("a");
       a.style.cursor = "pointer";
@@ -330,7 +330,7 @@ async function gotoPath(path, boolUpdateHistory = true, disableAels = true) {
       locationDiv.appendChild(a);
     });
     var slash = document.createElement("span");
-    slash.innerHTML = " / ";
+    slash.innerHTML = "/";
     locationDiv.appendChild(slash);
     var span = document.createElement("span");
     span.innerHTML = pathSplit.at(-1);
