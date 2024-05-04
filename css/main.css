@@ -55,12 +55,14 @@ img.dir {
 .blob-view .content pre:not(.line-numbers) {
     padding: 1% 1%;
     width: 98%;
-/*     text-wrap: balance; */
+    text-wrap: pretty;
 }
 
 ul.tree {
     max-height: 40vh;
     overflow: auto;
+    min-width: 200px;
+    max-width: 1000px;
 }
 
 
@@ -214,7 +216,7 @@ body:has(.create-url:not([hidden])) div.footer > div {
     user-select: none;
 }
 .create-url * {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Inter',sans-serif;
 /*     color: #ffffff; */
     letter-spacing: 0.5px;
     outline: none;
