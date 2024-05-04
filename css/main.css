@@ -45,6 +45,7 @@ img.dir {
 
 .blob-view .content pre.line-numbers {
     width: calc(100% - 4.8em);
+    font-size: 0.9em;
 }
 
 .blob-view .content:has(iframe[src*="pdf.js"]) {
