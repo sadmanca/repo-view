@@ -28,7 +28,6 @@ img.dir {
 
 .blob-view .content {
     overflow: auto;
-    padding: 0;
     overflow-x: auto;
 }
 
@@ -89,7 +88,6 @@ div.footer {
 body:has(#preview-div[hidden]) div.footer
 /*body:has(ul.tree[hidden]) div.footer*/
 {
-    position: fixed;
     bottom: 8px;
 /*     transform: translateY(-50%); */
 }
@@ -169,14 +167,10 @@ div#no-internet-div {
 }
 
 .footer > .made-with-love {
-    border: solid;
-    border-radius: 5px;
-    border-color: cornflowerblue;
     outline: inherit;
     user-select: inherit;
     width: fit-content;
     margin: auto;
-    margin-top: 2rem;
     padding: 5px;
 }
 

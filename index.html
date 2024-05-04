@@ -26,6 +26,26 @@
       (async () => {
         var useDarkThemeCookie = await localStorage.getItem("useDarkTheme");
         if (useDarkThemeCookie) {
+          window.useDarkTheme = useDarkThemeCookie
+            ? JSON.parse(useDarkThemeCookie)
+            : useDarkThemeCookie;
+        } else {
+          if (window.matchMedia) {
+            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+              useDarkTheme = true;
+            } else {
+              useDarkTheme = false;
+            }
+          } else {
+            useDarkTheme = true; // default is dark 🤓
+          }
+        }
+        useDarkTheme ? darkreader.enable() : darkreader.disable();
+      })();
+
+      (async () => {
+        var useDarkThemeCookie = await localStorage.getItem("useDarkTheme");
+        if (useDarkThemeCookie) {
             window.useDarkTheme = JSON.parse(useDarkThemeCookie);
         } else {
             window.useDarkTheme = true; // Default to dark theme
